@@ -26,6 +26,7 @@ server.on("message", (msg, remoteInfo) => {
   const ans = dnsPacket.encode({
     type: "response",
     id: incomingPacket.id,
+    flags: dnsPacket.AUTHORITATIVE_ANSWER,
     questions: incomingPacket.questions,
     answers: [
       {
