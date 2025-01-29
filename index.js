@@ -14,9 +14,12 @@ const db = {
 };
 
 server.on("message", (msg, remoteInfo) => {
+  // console.log({ msg }); //msg is encoded so we can't simple read it. msg is in binary
+  // console.log({ msg.toString() }); //msg is encoded so we can't simple read it.
+  // console.log({ remoteInfo }); this is address from where the query came
   const incomingPacket = dnsPacket.decode(msg);
   // console.log("Incoming msg");
-  // console.log({ msg });
+
   // console.log({ remoteInfo });
   // console.log({ incomingPacket });
   // console.log(incomingPacket.questions);

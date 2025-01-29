@@ -31,3 +31,8 @@ google: 8.8.8.8
 ## DNS
 
 - DNS works on the UDP protocol and this works by default on port 53.
+
+# Commands
+
+`dig geeksconvert.com`
+`dig @localhost geekconvert.com`
