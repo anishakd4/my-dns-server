@@ -36,3 +36,6 @@ google: 8.8.8.8
 
 `dig geeksconvert.com`
 `dig @localhost geekconvert.com`
+`nslookup geekconvert.com`
+`nslookup hashnode.network`
+`dig +norec blog.geekconvert.com`
